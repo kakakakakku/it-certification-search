@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
-    <string name="app_name">it-certification-search</string>
-    <string name="hello_world">Hello world!</string>
+    <!-- Title -->
+    <string name="app_name">IT資格サーチ</string>
+    <!-- Words -->
     <string name="action_settings">Settings</string>
-
 </resources>
