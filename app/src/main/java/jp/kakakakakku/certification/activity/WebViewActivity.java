@@ -21,7 +21,7 @@ public class WebViewActivity extends Activity {
         String url = getIntent().getStringExtra("url");
 
         requestWindowFeature(Window.FEATURE_INDETERMINATE_PROGRESS);
-        setContentView(R.layout.art_web_info);
+        setContentView(R.layout.webview);
         mWebView = (WebView) findViewById(R.id.info_web);
         mWebView.setVerticalScrollbarOverlay(true);
 

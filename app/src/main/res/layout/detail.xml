@@ -14,7 +14,7 @@
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
             android:id="@+id/name"
-            android:background="#ff87ff51"
+            android:background="#ffffa33e"
             android:textSize="24sp"
             android:text="///" />
     </LinearLayout>
@@ -25,97 +25,100 @@
         android:layout_height="match_parent"
         android:layout_weight="1">
 
-        <LinearLayout
-            android:orientation="vertical"
+        <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:background="#bad0ffbd">
+            android:layout_height="match_parent">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="主催団体"
-                android:id="@+id/l_organization_name"
-                android:textStyle="bold"
-                android:textSize="30dp" />
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="///"
-                android:id="@+id/organization_name"
-                android:textSize="20sp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="主催団体"
+                    android:id="@+id/l_organization_name"
+                    android:textStyle="bold"
+                    android:textSize="30dp" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="カテゴリー"
-                android:id="@+id/l_category"
-                android:textStyle="bold"
-                android:textSize="30dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="///"
+                    android:id="@+id/organization_name"
+                    android:textSize="20sp" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="///"
-                android:id="@+id/category"
-                android:textSize="20sp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="カテゴリー"
+                    android:id="@+id/l_category"
+                    android:textStyle="bold"
+                    android:textSize="30dp" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="Webページ"
-                android:id="@+id/l_url"
-                android:textStyle="bold"
-                android:textSize="30dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="///"
+                    android:id="@+id/category"
+                    android:textSize="20sp" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="///"
-                android:id="@+id/url"
-                android:textSize="20sp"
-                android:textColor="#ff0000ff" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Webページ"
+                    android:id="@+id/l_url"
+                    android:textStyle="bold"
+                    android:textSize="30dp" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="受験料"
-                android:id="@+id/l_price"
-                android:textStyle="bold"
-                android:textSize="30dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="///"
+                    android:id="@+id/url"
+                    android:textSize="20sp"
+                    android:textColor="#ff0000ff" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="///"
-                android:id="@+id/price"
-                android:textSize="20sp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="受験料"
+                    android:id="@+id/l_price"
+                    android:textStyle="bold"
+                    android:textSize="30dp" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="キーワード"
-                android:id="@+id/l_keywords"
-                android:textStyle="bold"
-                android:textSize="30dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="///"
+                    android:id="@+id/price"
+                    android:textSize="20sp" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="///"
-                android:id="@+id/keywords"
-                android:textSize="20sp" />
-        </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="キーワード"
+                    android:id="@+id/l_keywords"
+                    android:textStyle="bold"
+                    android:textSize="30dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="///"
+                    android:id="@+id/keywords"
+                    android:textSize="20sp" />
+            </LinearLayout>
+        </ScrollView>
 
     </LinearLayout>
-
 
     <LinearLayout
         android:orientation="horizontal"
@@ -130,7 +133,5 @@
             NendSpotId="213335"
             android:gravity="center" />
     </LinearLayout>
-
-
 
 </LinearLayout>

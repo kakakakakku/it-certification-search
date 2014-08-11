@@ -20,7 +20,7 @@ import jp.kakakakakku.certification.adapter.SectionRowData;
 import jp.kakakakakku.certification.db.entity.CertificationEntity;
 import jp.kakakakakku.certification.db.model.CertificationModel;
 
-public class ListSectionByPriceActivity extends Activity implements AdapterView.OnItemClickListener {
+public class ListSectionByPriceActivity extends Activity {
 
     List<CertificationEntity> cList;
 
@@ -57,17 +57,17 @@ public class ListSectionByPriceActivity extends Activity implements AdapterView.
         ListView listView = (ListView)findViewById(R.id.listView);
         listView.setAdapter(adapter);
 
-        listView.setOnItemClickListener(this);
+//        listView.setOnItemClickListener(this);
 
     }
 
-    @Override
-    public void onItemClick(AdapterView<?> parent, View v, int position, long id) {
-        // 資格詳細画面に遷移するために `certifications.id` を引き継ぐ
-        Intent intent = new Intent(this.getApplicationContext(), CertificationDetailActivity.class);
-        intent.putExtra("id", cList.get(position - 1).getId());
-        startActivity(intent);
-    }
+//    @Override
+//    public void onItemClick(AdapterView<?> parent, View v, int position, long id) {
+//        資格詳細画面に遷移するために `certifications.id` を引き継ぐ
+//        Intent intent = new Intent(this.getApplicationContext(), CertificationDetailActivity.class);
+//        intent.putExtra("id", cList.get(position - 1).getId());
+//        startActivity(intent);
+//    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

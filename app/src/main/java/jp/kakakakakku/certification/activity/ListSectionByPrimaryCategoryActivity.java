@@ -19,7 +19,7 @@ import jp.kakakakakku.certification.adapter.SectionRowData;
 import jp.kakakakakku.certification.db.entity.CertificationEntity;
 import jp.kakakakakku.certification.db.model.CertificationModel;
 
-public class ListSectionByPrimaryCategoryActivity extends Activity implements AdapterView.OnItemClickListener {
+public class ListSectionByPrimaryCategoryActivity extends Activity {
 
     List<CertificationEntity> cList;
 
@@ -54,16 +54,6 @@ public class ListSectionByPrimaryCategoryActivity extends Activity implements Ad
         ListView listView = (ListView)findViewById(R.id.listView);
         listView.setAdapter(adapter);
 
-        listView.setOnItemClickListener(this);
-
-    }
-
-    @Override
-    public void onItemClick(AdapterView<?> parent, View v, int position, long id) {
-        // 資格詳細画面に遷移するために `certifications.id` を引き継ぐ
-        Intent intent = new Intent(this.getApplicationContext(), CertificationDetailActivity.class);
-        intent.putExtra("id", cList.get(position - 1).getId());
-        startActivity(intent);
     }
 
     @Override
