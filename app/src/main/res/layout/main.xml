@@ -40,7 +40,7 @@
                 android:text="あなたに必要な\nIT資格が\n必ず見つかる"
                 android:id="@+id/l_desctiption"
                 android:maxLines="3"
-                android:textSize="50sp"
+                android:textSize="48sp"
                 android:textStyle="bold"
                 android:layout_gravity="center"
                 android:gravity="center_vertical|center_horizontal" />
