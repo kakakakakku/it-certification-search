@@ -236,6 +236,10 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
 
+        // リリース用キャプチャ取得用
+        // ステータスバー非表示
+//        getWindow().addFlags(android.view.WindowManager.LayoutParams.FLAG_FULLSCREEN);
+
         // リストする資格をセットする
         ArrayList<CertificationEntity> cEntities = new ArrayList<CertificationEntity>();
 

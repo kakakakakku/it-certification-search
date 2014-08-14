@@ -1,12 +1,9 @@
 package jp.kakakakakku.certification.activity;
 
 import android.app.Activity;
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.AdapterView;
 import android.widget.ListView;
 
 import java.util.ArrayList;
@@ -27,6 +24,10 @@ public class ListSectionByPrimaryCategoryActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.index);
+
+        // リリース用キャプチャ取得用
+        // ステータスバー非表示
+//        getWindow().addFlags(android.view.WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
         CertificationModel model = new CertificationModel(ListSectionByPrimaryCategoryActivity.this);
 
